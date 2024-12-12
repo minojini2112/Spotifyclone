@@ -1,20 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import Final from "./Component/Final";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import { PlayerContextProvider } from "./Context/PlayerContext";
-
-const router = createBrowserRouter([
-  {
-    path: "/*", 
-    element: <Final />, 
-  },
-]);
 
 const App = () => {
   return (
-    <PlayerContextProvider> 
-      <RouterProvider router={router} />
+    <PlayerContextProvider>
+      <HashRouter>
+        <Routes>
+          <Route path="/*" element={<Final />} />
+        </Routes>
+      </HashRouter>
     </PlayerContextProvider>
   );
 };
