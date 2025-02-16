@@ -1,5 +1,6 @@
 import perfect from "../assests/images/perfect.jpg"
 import wannabe from '../assests/images/wanna.jpg'
+import blueimage from '../assests/images/blueimage.jpg'
 import until from '../assests/images/until.jpg'
 import dan from '../assests/images/dan.jpg'
 import Belongto from '../assests/images/Belongto.jpg'
@@ -18,6 +19,7 @@ import song4 from "../assests/music/Dandelions.mp3"
 import song5 from "../assests/music/Enchanted.mp3"
 import song6 from "../assests/music/Belong Together.mp3"
 import song7 from "../assests/music/Alone.mp3"
+import song8 from "../assests/music/blue.mp3"
 export const albumdata = [
     {
         id:0,
@@ -74,6 +76,15 @@ export const songsData = [
     },
     {
         id:1,
+        name:"blue",
+        image:blueimage,
+        file:song8,
+        desc:"yung kai",
+        duration:"3:34"
+    },
+
+    {
+        id:2,
         name:"Until I Found You",
         image:until,
         file:song2,
@@ -81,7 +92,7 @@ export const songsData = [
         duration:"2:57"
     },
     {
-        id:2,
+        id:3,
         name:"I Wanna Be Yours",
         image:wannabe,
         file:song3,
@@ -89,7 +100,7 @@ export const songsData = [
         duration:"3:03"
     },
     {
-        id:3,
+        id:4,
         name:"Dandelions",
         image:dan,
         file:song4,
@@ -97,7 +108,7 @@ export const songsData = [
         duration:"3:53"
     },
     {
-        id:4,
+        id:5,
         name:"Enchanted",
         image:enchan,
         file:song5,
@@ -105,7 +116,7 @@ export const songsData = [
         duration:"5:52"
     },
     {
-        id:5,
+        id:6,
         name:"Belong Together",
         image:Belongto,
         file:song6,
@@ -113,13 +124,13 @@ export const songsData = [
         duration:"2:28"
     },
     {
-        id:6,
+        id:7,
         name:"Alone,Pt.ll",
         image:alonept,
         file:song7,
         desc:"Alan Walker",
         duration:"2:59"
-    }
-
+    },
+   
 
 ]
